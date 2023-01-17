@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lettc
@@ -196,7 +198,7 @@ public class FrmIngresoDireccion extends javax.swing.JFrame {
 
     private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
         if(txtCiudad.getText().isEmpty() || txtProcincia.getText().isEmpty() || txtCallePrincipal.getText().isEmpty() || txtCalleSecundaria.getText().isEmpty() || txtCodigoPostal.getText().isEmpty()){
-            System.out.println("Campos vacios");
+            JOptionPane.showMessageDialog(null, "Campos vacios");
         }else{
             FrmServicio btndireccion = new FrmServicio();
         btndireccion.setVisible(true);

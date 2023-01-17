@@ -115,11 +115,12 @@
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="btnVerSiguientePropiedad" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="jPanel6" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="jPanel7" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="jPanel6" max="32767" attributes="0"/>
+                              <Component id="jPanel5" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -143,6 +144,8 @@
                           <Component id="jPanel7" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel6" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jPanel9" max="-2" attributes="0"/>
@@ -287,6 +290,7 @@
             <Component class="javax.swing.JTextField" name="txtCiudad">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -296,6 +300,7 @@
             <Component class="javax.swing.JTextField" name="txtProvincia">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -305,6 +310,7 @@
             <Component class="javax.swing.JTextField" name="txtCallePrincipal">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -314,6 +320,7 @@
             <Component class="javax.swing.JTextField" name="txtCalleSegundaria">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -323,6 +330,7 @@
             <Component class="javax.swing.JTextField" name="txtCodigoPostal">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -432,6 +440,7 @@
             <Component class="javax.swing.JTextField" name="txtNumeroPropiedad">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -441,6 +450,7 @@
             <Component class="javax.swing.JTextField" name="txtHabitaciones">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -450,6 +460,7 @@
             <Component class="javax.swing.JTextField" name="txtBa&#xf1;os">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -558,6 +569,7 @@
             <Component class="javax.swing.JTextField" name="txtWifi">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -567,6 +579,7 @@
             <Component class="javax.swing.JTextField" name="txtTV">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -664,6 +677,7 @@
             <Component class="javax.swing.JTextField" name="txtAireAcondicionado">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -673,6 +687,7 @@
             <Component class="javax.swing.JTextField" name="txtAguaCaliente">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -790,6 +805,7 @@
             <Component class="javax.swing.JTextField" name="txtLavadora">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -799,6 +815,7 @@
             <Component class="javax.swing.JTextField" name="txtSecadora">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -972,6 +989,7 @@
             <Component class="javax.swing.JTextField" name="txtCocina">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -981,6 +999,7 @@
             <Component class="javax.swing.JTextField" name="txtEstacionamiento">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -990,6 +1009,7 @@
             <Component class="javax.swing.JTextField" name="txtPicina">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -999,6 +1019,7 @@
             <Component class="javax.swing.JTextField" name="txtJacuzzi">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -1008,6 +1029,7 @@
             <Component class="javax.swing.JTextField" name="txtParrilla">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -1017,6 +1039,7 @@
             <Component class="javax.swing.JTextField" name="txtPatio">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -1026,6 +1049,7 @@
             <Component class="javax.swing.JTextField" name="txtComedor">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -1035,6 +1059,7 @@
             <Component class="javax.swing.JTextField" name="txtSalaJuegos">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
@@ -1044,6 +1069,7 @@
             <Component class="javax.swing.JTextField" name="txtOtros">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -1075,6 +1101,93 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVerSiguientePropiedadActionPerformed"/>
           </Events>
         </Component>
+        <Container class="javax.swing.JPanel" name="jPanel5">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel25" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtFechaF" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtFechaI" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFechaI" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFechaF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel25">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DISPONIBILIDAD"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel34">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha Inicio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel35">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha final"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtFechaI">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtFechaF">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

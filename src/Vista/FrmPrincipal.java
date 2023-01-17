@@ -12,7 +12,7 @@ import modelo.Propiedad;
  * @author lettc
  */
 public class FrmPrincipal extends javax.swing.JFrame {
-    int index = -1;
+    int index = 0;
 
     /**
      * Creates new form FrmPrincipal
@@ -101,6 +101,12 @@ public class FrmPrincipal extends javax.swing.JFrame {
         btnNuevaPropiedad = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         btnVerSiguientePropiedad = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        txtFechaI = new javax.swing.JTextField();
+        txtFechaF = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmUsuario = new javax.swing.JMenuItem();
@@ -133,18 +139,23 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel8.setText("Codigo postal");
 
         txtCiudad.setEditable(false);
+        txtCiudad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCiudad.setFocusable(false);
 
         txtProvincia.setEditable(false);
+        txtProvincia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtProvincia.setFocusable(false);
 
         txtCallePrincipal.setEditable(false);
+        txtCallePrincipal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCallePrincipal.setFocusable(false);
 
         txtCalleSegundaria.setEditable(false);
+        txtCalleSegundaria.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCalleSegundaria.setFocusable(false);
 
         txtCodigoPostal.setEditable(false);
+        txtCodigoPostal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCodigoPostal.setFocusable(false);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -215,12 +226,15 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel33.setText("Baños");
 
         txtNumeroPropiedad.setEditable(false);
+        txtNumeroPropiedad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtNumeroPropiedad.setFocusable(false);
 
         txtHabitaciones.setEditable(false);
+        txtHabitaciones.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtHabitaciones.setFocusable(false);
 
         txtBaños.setEditable(false);
+        txtBaños.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtBaños.setFocusable(false);
 
         txtDescripcion.setEditable(false);
@@ -286,9 +300,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel12.setText("TV");
 
         txtWifi.setEditable(false);
+        txtWifi.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtWifi.setFocusable(false);
 
         txtTV.setEditable(false);
+        txtTV.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtTV.setFocusable(false);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -344,9 +360,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel28.setText("Agua caliente");
 
         txtAireAcondicionado.setEditable(false);
+        txtAireAcondicionado.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtAireAcondicionado.setFocusable(false);
 
         txtAguaCaliente.setEditable(false);
+        txtAguaCaliente.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtAguaCaliente.setFocusable(false);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -409,9 +427,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel24.setText("Secadora");
 
         txtLavadora.setEditable(false);
+        txtLavadora.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtLavadora.setFocusable(false);
 
         txtSecadora.setEditable(false);
+        txtSecadora.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtSecadora.setFocusable(false);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -473,30 +493,39 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jLabel2.setText("Otros");
 
         txtCocina.setEditable(false);
+        txtCocina.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCocina.setFocusable(false);
 
         txtEstacionamiento.setEditable(false);
+        txtEstacionamiento.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtEstacionamiento.setFocusable(false);
 
         txtPicina.setEditable(false);
+        txtPicina.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtPicina.setFocusable(false);
 
         txtJacuzzi.setEditable(false);
+        txtJacuzzi.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtJacuzzi.setFocusable(false);
 
         txtParrilla.setEditable(false);
+        txtParrilla.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtParrilla.setFocusable(false);
 
         txtPatio.setEditable(false);
+        txtPatio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtPatio.setFocusable(false);
 
         txtComedor.setEditable(false);
+        txtComedor.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtComedor.setFocusable(false);
 
         txtSalaJuegos.setEditable(false);
+        txtSalaJuegos.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtSalaJuegos.setFocusable(false);
 
         txtOtros.setEditable(false);
+        txtOtros.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -597,6 +626,54 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel25.setText("DISPONIBILIDAD");
+
+        jLabel34.setText("Fecha Inicio");
+
+        jLabel35.setText("Fecha final");
+
+        txtFechaI.setEditable(false);
+        txtFechaI.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        txtFechaF.setEditable(false);
+        txtFechaF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel35)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtFechaF))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel34)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtFechaI)))
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(txtFechaI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(txtFechaF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -625,10 +702,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(btnVerSiguientePropiedad))
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -645,7 +723,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -716,146 +796,159 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void btnVerSiguientePropiedadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerSiguientePropiedadActionPerformed
         // TODO add your handling code here:
-        index++;
-        Propiedad SacarDtoPro;
-        for (int i = PropiedadDatos.size() - 1; i >= 0; i--) {
-            SacarDtoPro = (Propiedad) PropiedadDatos.get(index);
-
-            Vista.FrmPrincipal.lblImagen.setIcon(SacarDtoPro.getImagen());
-            Vista.FrmPrincipal.txtCiudad.setText(SacarDtoPro.getCiudad());
-            Vista.FrmPrincipal.txtProvincia.setText(SacarDtoPro.getProvincia());
-            Vista.FrmPrincipal.txtCallePrincipal.setText(SacarDtoPro.getCalleP());
-            Vista.FrmPrincipal.txtCalleSegundaria.setText(SacarDtoPro.getCalleS());
-            Vista.FrmPrincipal.txtCodigoPostal.setText(SacarDtoPro.getCodigoP());
-
-            Vista.FrmPrincipal.txtDescripcion.setText(SacarDtoPro.getDescripcion());
-            Vista.FrmPrincipal.txtNumeroPropiedad.setText(SacarDtoPro.getNumeroPropiedad());
-            Vista.FrmPrincipal.txtHabitaciones.setText(SacarDtoPro.getHabitaciones());
-            Vista.FrmPrincipal.txtBaños.setText(SacarDtoPro.getBaños());
-
-            if (SacarDtoPro.Wifi) {
-                String Wifi = "Si";
-                Vista.FrmPrincipal.txtWifi.setText(Wifi);
-            } else {
-                String Wifi = "No";
-                Vista.FrmPrincipal.txtWifi.setText(Wifi);
+        if(index > PropiedadDatos.size()){
+            System.out.println("hola");
+        }else{
+            index++;
+            if(index == PropiedadDatos.size()){
+                index = 0;
             }
+            Propiedad SacarDtoPro;
+            for (int i = PropiedadDatos.size() - 1; i >= 0; i--) {
 
-            if (SacarDtoPro.TV) {
-                String TV = "Si";
-                Vista.FrmPrincipal.txtTV.setText(TV);
-            } else {
-                String TV = "No";
-                Vista.FrmPrincipal.txtTV.setText(TV);
-            }
+                SacarDtoPro = (Propiedad) PropiedadDatos.get(index);
 
-            if (SacarDtoPro.Lavadora) {
-                String Lavadora = "Si";
-                Vista.FrmPrincipal.txtLavadora.setText(Lavadora);
-            } else {
-                String Lavadora = "No";
-                Vista.FrmPrincipal.txtLavadora.setText(Lavadora);
-            }
+                Vista.FrmPrincipal.lblImagen.setIcon(SacarDtoPro.getImagen());
+                Vista.FrmPrincipal.txtCiudad.setText(SacarDtoPro.getCiudad());
+                Vista.FrmPrincipal.txtProvincia.setText(SacarDtoPro.getProvincia());
+                Vista.FrmPrincipal.txtCallePrincipal.setText(SacarDtoPro.getCalleP());
+                Vista.FrmPrincipal.txtCalleSegundaria.setText(SacarDtoPro.getCalleS());
+                Vista.FrmPrincipal.txtCodigoPostal.setText(SacarDtoPro.getCodigoP());
 
-            if (SacarDtoPro.Secadora) {
-                String Secadora = "Si";
-                Vista.FrmPrincipal.txtSecadora.setText(Secadora);
-            } else {
-                String Secadora = "No";
-                Vista.FrmPrincipal.txtSecadora.setText(Secadora);
-            }
+                Vista.FrmPrincipal.txtDescripcion.setText(SacarDtoPro.getDescripcion());
+                Vista.FrmPrincipal.txtNumeroPropiedad.setText(SacarDtoPro.getNumeroPropiedad());
+                Vista.FrmPrincipal.txtHabitaciones.setText(SacarDtoPro.getHabitaciones());
+                Vista.FrmPrincipal.txtBaños.setText(SacarDtoPro.getBaños());
+                
+                Vista.FrmPrincipal.txtFechaI.setText(SacarDtoPro.getFechaIngreso());
+                Vista.FrmPrincipal.txtFechaF.setText(SacarDtoPro.getFechaSalida());
 
-            if (SacarDtoPro.AireAcondicionado) {
-                String AireAcondicionado = "Si";
-                Vista.FrmPrincipal.txtAireAcondicionado.setText(AireAcondicionado);
-            } else {
-                String AireAcondicionado = "No";
-                Vista.FrmPrincipal.txtAireAcondicionado.setText(AireAcondicionado);
-            }
+                if (SacarDtoPro.Wifi) {
+                    String Wifi = "Si";
+                    Vista.FrmPrincipal.txtWifi.setText(Wifi);
+                } else {
+                    String Wifi = "No";
+                    Vista.FrmPrincipal.txtWifi.setText(Wifi);
+                }
 
-            if (SacarDtoPro.AguaCaliente) {
-                String AguaCaliente = "Si";
-                Vista.FrmPrincipal.txtAguaCaliente.setText(AguaCaliente);
-            } else {
-                String AguaCaliente = "No";
-                Vista.FrmPrincipal.txtAguaCaliente.setText(AguaCaliente);
-            }
+                if (SacarDtoPro.TV) {
+                    String TV = "Si";
+                    Vista.FrmPrincipal.txtTV.setText(TV);
+                } else {
+                    String TV = "No";
+                    Vista.FrmPrincipal.txtTV.setText(TV);
+                }
 
-            if (SacarDtoPro.Cocina) {
-                String Cocina = "Si";
-                Vista.FrmPrincipal.txtCocina.setText(Cocina);
-            } else {
-                String Cocina = "No";
-                Vista.FrmPrincipal.txtCocina.setText(Cocina);
-            }
+                if (SacarDtoPro.Lavadora) {
+                    String Lavadora = "Si";
+                    Vista.FrmPrincipal.txtLavadora.setText(Lavadora);
+                } else {
+                    String Lavadora = "No";
+                    Vista.FrmPrincipal.txtLavadora.setText(Lavadora);
+                }
 
-            if (SacarDtoPro.Estacionamiento) {
-                String Estacionamiento = "Si";
-                Vista.FrmPrincipal.txtEstacionamiento.setText(Estacionamiento);
-            } else {
-                String Estacionamiento = "No";
-                Vista.FrmPrincipal.txtEstacionamiento.setText(Estacionamiento);
-            }
+                if (SacarDtoPro.Secadora) {
+                    String Secadora = "Si";
+                    Vista.FrmPrincipal.txtSecadora.setText(Secadora);
+                } else {
+                    String Secadora = "No";
+                    Vista.FrmPrincipal.txtSecadora.setText(Secadora);
+                }
 
-            if (SacarDtoPro.Picina) {
-                String Picina = "Si";
-                Vista.FrmPrincipal.txtPicina.setText(Picina);
-            } else {
-                String Picina = "No";
-                Vista.FrmPrincipal.txtPicina.setText(Picina);
-            }
+                if (SacarDtoPro.AireAcondicionado) {
+                    String AireAcondicionado = "Si";
+                    Vista.FrmPrincipal.txtAireAcondicionado.setText(AireAcondicionado);
+                } else {
+                    String AireAcondicionado = "No";
+                    Vista.FrmPrincipal.txtAireAcondicionado.setText(AireAcondicionado);
+                }
 
-            if (SacarDtoPro.Jacuzzi) {
-                String Jacuzzi = "Si";
-                Vista.FrmPrincipal.txtJacuzzi.setText(Jacuzzi);
-            } else {
-                String Jacuzzi = "No";
-                Vista.FrmPrincipal.txtJacuzzi.setText(Jacuzzi);
-            }
+                if (SacarDtoPro.AguaCaliente) {
+                    String AguaCaliente = "Si";
+                    Vista.FrmPrincipal.txtAguaCaliente.setText(AguaCaliente);
+                } else {
+                    String AguaCaliente = "No";
+                    Vista.FrmPrincipal.txtAguaCaliente.setText(AguaCaliente);
+                }
 
-            if (SacarDtoPro.Parrilla) {
-                String Parrilla = "Si";
-                Vista.FrmPrincipal.txtParrilla.setText(Parrilla);
-            } else {
-                String Parrilla = "No";
-                Vista.FrmPrincipal.txtParrilla.setText(Parrilla);
-            }
+                if (SacarDtoPro.Cocina) {
+                    String Cocina = "Si";
+                    Vista.FrmPrincipal.txtCocina.setText(Cocina);
+                } else {
+                    String Cocina = "No";
+                    Vista.FrmPrincipal.txtCocina.setText(Cocina);
+                }
 
-            if (SacarDtoPro.Patio) {
-                String Patio = "Si";
-                Vista.FrmPrincipal.txtPatio.setText(Patio);
-            } else {
-                String Patio = "No";
-                Vista.FrmPrincipal.txtPatio.setText(Patio);
-            }
+                if (SacarDtoPro.Estacionamiento) {
+                    String Estacionamiento = "Si";
+                    Vista.FrmPrincipal.txtEstacionamiento.setText(Estacionamiento);
+                } else {
+                    String Estacionamiento = "No";
+                    Vista.FrmPrincipal.txtEstacionamiento.setText(Estacionamiento);
+                }
 
-            if (SacarDtoPro.Comedor) {
-                String Comedor = "Si";
-                Vista.FrmPrincipal.txtComedor.setText(Comedor);
-            } else {
-                String Comedor = "No";
-                Vista.FrmPrincipal.txtComedor.setText(Comedor);
-            }
+                if (SacarDtoPro.Picina) {
+                    String Picina = "Si";
+                    Vista.FrmPrincipal.txtPicina.setText(Picina);
+                } else {
+                    String Picina = "No";
+                    Vista.FrmPrincipal.txtPicina.setText(Picina);
+                }
 
-            if (SacarDtoPro.SalaJuegos) {
-                String SalaJuegos = "Si";
-                Vista.FrmPrincipal.txtSalaJuegos.setText(SalaJuegos);
-            } else {
-                String SalaJuegos = "No";
-                Vista.FrmPrincipal.txtSalaJuegos.setText(SalaJuegos);
+                if (SacarDtoPro.Jacuzzi) {
+                    String Jacuzzi = "Si";
+                    Vista.FrmPrincipal.txtJacuzzi.setText(Jacuzzi);
+                } else {
+                    String Jacuzzi = "No";
+                    Vista.FrmPrincipal.txtJacuzzi.setText(Jacuzzi);
+                }
+
+                if (SacarDtoPro.Parrilla) {
+                    String Parrilla = "Si";
+                    Vista.FrmPrincipal.txtParrilla.setText(Parrilla);
+                } else {
+                    String Parrilla = "No";
+                    Vista.FrmPrincipal.txtParrilla.setText(Parrilla);
+                }
+
+                if (SacarDtoPro.Patio) {
+                    String Patio = "Si";
+                    Vista.FrmPrincipal.txtPatio.setText(Patio);
+                } else {
+                    String Patio = "No";
+                    Vista.FrmPrincipal.txtPatio.setText(Patio);
+                }
+
+                if (SacarDtoPro.Comedor) {
+                    String Comedor = "Si";
+                    Vista.FrmPrincipal.txtComedor.setText(Comedor);
+                } else {
+                    String Comedor = "No";
+                    Vista.FrmPrincipal.txtComedor.setText(Comedor);
+                }
+
+                if (SacarDtoPro.SalaJuegos) {
+                    String SalaJuegos = "Si";
+                    Vista.FrmPrincipal.txtSalaJuegos.setText(SalaJuegos);
+                } else {
+                    String SalaJuegos = "No";
+                    Vista.FrmPrincipal.txtSalaJuegos.setText(SalaJuegos);
+                }
+                if (SacarDtoPro.Otros) {
+                    String Otros = Vista.FrmServicio.txtOtros.getText();
+                    Vista.FrmPrincipal.txtOtros.setText(Otros);
+                } else {
+                    String Otros = "No";
+                    Vista.FrmPrincipal.txtOtros.setText(Otros);
+                }
+
             }
-            if (SacarDtoPro.Otros) {
-                String Otros = Vista.FrmServicio.txtOtros.getText();
-                Vista.FrmPrincipal.txtOtros.setText(Otros);
-            } else {
-                String Otros = "No";
-                Vista.FrmPrincipal.txtOtros.setText(Otros);
-            }
-   
         }
-        for (int i = 0; i < PropiedadDatos.size(); i++) {
-            System.out.println(PropiedadDatos.get(i) + " ");
-        }
+        
+        
+//        for (int i = 0; i < PropiedadDatos.size(); i++) {
+//            System.out.println(PropiedadDatos.get(i) + " ");
+//        }
     }//GEN-LAST:event_btnVerSiguientePropiedadActionPerformed
 
     /**
@@ -914,6 +1007,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
@@ -923,6 +1017,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -936,6 +1032,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -955,6 +1052,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
     public static javax.swing.JTextField txtComedor;
     public static javax.swing.JTextArea txtDescripcion;
     public static javax.swing.JTextField txtEstacionamiento;
+    public static javax.swing.JTextField txtFechaF;
+    public static javax.swing.JTextField txtFechaI;
     public static javax.swing.JTextField txtHabitaciones;
     public static javax.swing.JTextField txtJacuzzi;
     public static javax.swing.JTextField txtLavadora;

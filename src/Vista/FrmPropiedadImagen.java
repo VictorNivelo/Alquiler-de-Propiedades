@@ -235,6 +235,7 @@ public class FrmPropiedadImagen extends javax.swing.JFrame {
                     Wifi, TV, Lavadora, Secadora, Estacionamiento, Cocina, Picina, Jacuzzi, Parrilla, Patio, Comedor, SalaJuegos, AireAcondicionado, AguaCaliente, Otros,
                     TipoPropiedad, Descripcion, NumeroPropiedad, Huesped, Habitaciones, Camas, Baños, Precio, FechaIngreso, FechaSalida, imagen);
             PropiedadDatos.add(propiedad);
+            JOptionPane.showMessageDialog(null, "Propiedad guardada");
         }
         
     }//GEN-LAST:event_btnGuardarInformacionActionPerformed

@@ -267,8 +267,15 @@ public class FrmIngresoPropiedad extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        if(cbxTipoPropiedad.getSelectedItem().toString().isEmpty() || txtDescripcion.getText().isEmpty() || txtNumeroPropiedad.getText().isEmpty() || txtPrecio.getText().isEmpty()){
-            System.out.println("campos vacios");
+        int Huesped = (int)spinHuespedes.getValue();
+        int Habitacio = (int)spinHabitaciones.getValue();
+        int Camas = (int)spinCamas.getValue();
+        int Banos = (int)spinBanios.getValue();
+        
+        if(cbxTipoPropiedad.getSelectedItem().toString().isEmpty() || txtDescripcion.getText().isEmpty() 
+                || txtNumeroPropiedad.getText().isEmpty() || txtPrecio.getText().isEmpty()
+                || Huesped == 0 || Habitacio== 0|| Camas== 0||Banos== 0 || dateDisponibilidadDesde.getDate()==null || dateDisponibilidadHasta.getDate()==null){
+            JOptionPane.showMessageDialog(null, "Campos vacios");
         }else{
             FrmPropiedadImagen btndireccion = new FrmPropiedadImagen();
         btndireccion.setVisible(true);
