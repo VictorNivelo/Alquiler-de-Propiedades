@@ -335,6 +335,7 @@ public class Propiedad {
     public void setImagen(ImageIcon Imagen) {
         this.Imagen = Imagen;
     }
+    
 
     @Override
     public String toString() {

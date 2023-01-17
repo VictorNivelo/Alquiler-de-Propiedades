@@ -8,12 +8,12 @@ package Vista;
  *
  * @author lettc
  */
-public class Frmservicio extends javax.swing.JFrame {
+public class FrmServicio extends javax.swing.JFrame {
 
     /**
      * Creates new form Frmservicio
      */
-    public Frmservicio() {
+    public FrmServicio() {
         initComponents();
         setLocationRelativeTo(null);
         btnSiguiente.requestFocus();
@@ -166,6 +166,13 @@ public class Frmservicio extends javax.swing.JFrame {
         checkAguaCaliente.setText("Agua caliente");
 
         checkOtros.setText("Otros");
+        checkOtros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkOtrosActionPerformed(evt);
+            }
+        });
+
+        txtOtros.setEditable(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -349,6 +356,16 @@ public class Frmservicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_checkWifiActionPerformed
 
+    private void checkOtrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkOtrosActionPerformed
+        // TODO add your handling code here:
+        boolean OtrosChck = checkOtros.isSelected();
+        if(OtrosChck == true){
+            txtOtros.setEditable(true);
+        }else{
+            txtOtros.setEditable(false);
+        }
+    }//GEN-LAST:event_checkOtrosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -366,20 +383,21 @@ public class Frmservicio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frmservicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmServicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frmservicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmServicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frmservicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmServicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frmservicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmServicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frmservicio().setVisible(true);
+                new FrmServicio().setVisible(true);
             }
         });
     }

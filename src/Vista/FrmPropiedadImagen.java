@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import modelo.Propiedad;
 
 /**
@@ -191,45 +192,51 @@ public class FrmPropiedadImagen extends javax.swing.JFrame {
 
     private void btnGuardarInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarInformacionActionPerformed
         // TODO add your handling code here:
-        String Ciudad = Vista.FrmIngresoDireccion.txtProcincia.getText();
-        String provincia = Vista.FrmIngresoDireccion.txtCiudad.getText();
-        String CalleP = Vista.FrmIngresoDireccion.txtCallePrincipal.getText();
-        String CalleS = Vista.FrmIngresoDireccion.txtCalleSecundaria.getText();
-        String CodigoP = Vista.FrmIngresoDireccion.txtCodigoPostal.getText();
+        if (lblAgregarImagen.getIcon() == null) {
+            JOptionPane.showMessageDialog(null, "Sin imagen");
+        } 
+        else {
+            String Ciudad = Vista.FrmIngresoDireccion.txtProcincia.getText();
+            String provincia = Vista.FrmIngresoDireccion.txtCiudad.getText();
+            String CalleP = Vista.FrmIngresoDireccion.txtCallePrincipal.getText();
+            String CalleS = Vista.FrmIngresoDireccion.txtCalleSecundaria.getText();
+            String CodigoP = Vista.FrmIngresoDireccion.txtCodigoPostal.getText();
+
+            boolean Wifi = Vista.FrmServicio.checkWifi.isSelected();
+            boolean TV = Vista.FrmServicio.checkTV.isSelected();
+            boolean Lavadora = Vista.FrmServicio.checkLavadora.isSelected();
+            boolean Secadora = Vista.FrmServicio.checkSecadora.isSelected();
+            boolean Estacionamiento = Vista.FrmServicio.checkEstacionamiento.isSelected();
+            boolean Cocina = Vista.FrmServicio.checkCocina.isSelected();
+            boolean Picina = Vista.FrmServicio.checkPicina.isSelected();
+            boolean Jacuzzi = Vista.FrmServicio.checkJacuzzi.isSelected();
+            boolean Parrilla = Vista.FrmServicio.checkParrilla.isSelected();
+            boolean Patio = Vista.FrmServicio.checkPatio.isSelected();
+            boolean Comedor = Vista.FrmServicio.checkComedor.isSelected();
+            boolean SalaJuegos = Vista.FrmServicio.checkSalaJuegos.isSelected();
+            boolean AireAcondicionado = Vista.FrmServicio.checkAireAcondicionado.isSelected();
+            boolean AguaCaliente = Vista.FrmServicio.checkAguaCaliente.isSelected();
+            boolean Otros = Vista.FrmServicio.checkOtros.isSelected();
+
+            String TipoPropiedad = Vista.FrmIngresoPropiedad.cbxTipoPropiedad.getSelectedItem().toString();
+            String Descripcion = Vista.FrmIngresoPropiedad.txtDescripcion.getText();
+            String NumeroPropiedad = Vista.FrmIngresoPropiedad.txtNumeroPropiedad.getText();
+            String Huesped = Vista.FrmIngresoPropiedad.spinHuespedes.getValue().toString();
+            String Habitaciones = Vista.FrmIngresoPropiedad.spinHabitaciones.getValue().toString();
+            String Camas = Vista.FrmIngresoPropiedad.spinCamas.getValue().toString();
+            String Baños = Vista.FrmIngresoPropiedad.spinBanios.getValue().toString();
+            String Precio = Vista.FrmIngresoPropiedad.txtPrecio.getText();
+            String FechaIngreso = Vista.FrmIngresoPropiedad.dateDisponibilidadDesde.getDate().toString();
+            String FechaSalida = Vista.FrmIngresoPropiedad.dateDisponibilidadHasta.getDate().toString();
+
+            ImageIcon imagen = (ImageIcon) lblAgregarImagen.getIcon();
+
+            Propiedad propiedad = new Propiedad(Ciudad, provincia, CalleP, CalleS, CodigoP,
+                    Wifi, TV, Lavadora, Secadora, Estacionamiento, Cocina, Picina, Jacuzzi, Parrilla, Patio, Comedor, SalaJuegos, AireAcondicionado, AguaCaliente, Otros,
+                    TipoPropiedad, Descripcion, NumeroPropiedad, Huesped, Habitaciones, Camas, Baños, Precio, FechaIngreso, FechaSalida, imagen);
+            PropiedadDatos.add(propiedad);
+        }
         
-        boolean Wifi = Vista.Frmservicio.checkWifi.isSelected();
-        boolean TV = Vista.Frmservicio.checkTV.isSelected();
-        boolean Lavadora = Vista.Frmservicio.checkLavadora.isSelected();
-        boolean Secadora = Vista.Frmservicio.checkSecadora.isSelected();
-        boolean Estacionamiento = Vista.Frmservicio.checkEstacionamiento.isSelected();
-        boolean Cocina = Vista.Frmservicio.checkCocina.isSelected();
-        boolean Picina = Vista.Frmservicio.checkPicina.isSelected();
-        boolean Jacuzzi = Vista.Frmservicio.checkJacuzzi.isSelected();
-        boolean Parrilla = Vista.Frmservicio.checkParrilla.isSelected();
-        boolean Patio = Vista.Frmservicio.checkPatio.isSelected();
-        boolean Comedor = Vista.Frmservicio.checkComedor.isSelected();
-        boolean SalaJuegos = Vista.Frmservicio.checkSalaJuegos.isSelected();
-        boolean AireAcondicionado = Vista.Frmservicio.checkAireAcondicionado.isSelected();
-        boolean AguaCaliente = Vista.Frmservicio.checkAguaCaliente.isSelected();
-        boolean Otros = Vista.Frmservicio.checkOtros.isSelected();
-        
-        String TipoPropiedad = Vista.FrmIngresoPropiedad.cbxTipoPropiedad.getSelectedItem().toString();
-        String Descripcion = Vista.FrmIngresoPropiedad.txtDescripcion.getText();
-        String NumeroPropiedad = Vista.FrmIngresoPropiedad.txtNumeroPropiedad.getText();
-        String Huesped = Vista.FrmIngresoPropiedad.spinHuespedes.getValue().toString();
-        String Habitaciones = Vista.FrmIngresoPropiedad.spinHabitaciones.getValue().toString();
-        String Camas = Vista.FrmIngresoPropiedad.spinCamas.getValue().toString();
-        String Baños = Vista.FrmIngresoPropiedad.spinBanios.getValue().toString();
-        String Precio = Vista.FrmIngresoPropiedad.txtPrecio.getText();
-        String FechaIngreso = Vista.FrmIngresoPropiedad.dateDisponibilidadDesde.getDate().toString();
-        String FechaSalida = Vista.FrmIngresoPropiedad.dateDisponibilidadHasta.getDate().toString();
-        
-        ImageIcon imagen = (ImageIcon) lblAgregarImagen.getIcon();
-                
-        Propiedad propiedad = new Propiedad(Ciudad, provincia, CalleP, CalleS, CodigoP, 
-                Wifi, TV, Lavadora, Secadora, Estacionamiento, Cocina, Picina, Jacuzzi, Parrilla, Patio, Comedor, SalaJuegos, AireAcondicionado, AguaCaliente, Otros, 
-                TipoPropiedad, Descripcion, NumeroPropiedad, Huesped, Habitaciones, Camas, Baños, Precio, FechaIngreso, FechaSalida, imagen);
-        PropiedadDatos.add(propiedad);
     }//GEN-LAST:event_btnGuardarInformacionActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed

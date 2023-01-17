@@ -267,15 +267,20 @@ public class FrmIngresoPropiedad extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        FrmPropiedadImagen btndireccion = new FrmPropiedadImagen();
+        if(cbxTipoPropiedad.getSelectedItem().toString().isEmpty() || txtDescripcion.getText().isEmpty() || txtNumeroPropiedad.getText().isEmpty() || txtPrecio.getText().isEmpty()){
+            System.out.println("campos vacios");
+        }else{
+            FrmPropiedadImagen btndireccion = new FrmPropiedadImagen();
         btndireccion.setVisible(true);
         this.setVisible(false);
+        }
+        
 //        System.out.println(""+dateDisponibilidadDesde.getDate().toString());
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
-        Frmservicio servicio = new Frmservicio();
+        FrmServicio servicio = new FrmServicio();
         servicio.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegresarActionPerformed

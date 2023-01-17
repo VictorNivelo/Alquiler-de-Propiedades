@@ -198,7 +198,7 @@ public class FrmIngresoDireccion extends javax.swing.JFrame {
         if(txtCiudad.getText().isEmpty() || txtProcincia.getText().isEmpty() || txtCallePrincipal.getText().isEmpty() || txtCalleSecundaria.getText().isEmpty() || txtCodigoPostal.getText().isEmpty()){
             System.out.println("Campos vacios");
         }else{
-            Frmservicio btndireccion = new Frmservicio();
+            FrmServicio btndireccion = new FrmServicio();
         btndireccion.setVisible(true);
         this.setVisible(false);
         }
