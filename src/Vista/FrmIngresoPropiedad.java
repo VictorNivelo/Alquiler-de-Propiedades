@@ -99,7 +99,7 @@ public class FrmIngresoPropiedad extends javax.swing.JFrame {
 
         lbltipopropiedad.setText("Tipo de Propiedad: ");
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Datos Propiedad");
 

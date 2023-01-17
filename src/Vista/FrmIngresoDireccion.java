@@ -61,7 +61,7 @@ public class FrmIngresoDireccion extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Dirección");
 
@@ -195,9 +195,14 @@ public class FrmIngresoDireccion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
-        Frmservicio btndireccion = new Frmservicio();
+        if(txtCiudad.getText().isEmpty() || txtProcincia.getText().isEmpty() || txtCallePrincipal.getText().isEmpty() || txtCalleSecundaria.getText().isEmpty() || txtCodigoPostal.getText().isEmpty()){
+            System.out.println("Campos vacios");
+        }else{
+            Frmservicio btndireccion = new Frmservicio();
         btndireccion.setVisible(true);
         this.setVisible(false);
+        }
+        
         
     }//GEN-LAST:event_btnOkActionPerformed
 
